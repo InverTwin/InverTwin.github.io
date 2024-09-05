@@ -18,9 +18,7 @@ approach harnesses the power of physical-based simulation with differentiable co
 Our extensive experiments demonstrate that InverTwin significantly enhances existing machine 
 learning systems, improves robotics applications, and facilitates physically constrained parameter searches. 
 These advancements pave the way for more accurate and responsive RF digital twins, with potential applications 
-in communications, autonomous systems, and smart environments. The supplementary materials and code are 
-released anonymously at  
-`invertwin.github.io <https://invertwin.github.io/>`_.
+in communications, autonomous systems, and smart environments. A compiled python will be provided soon.
 
 
 .. toctree::
