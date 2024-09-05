@@ -3,12 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-InverTwin documentation
+InverTwin
 ========================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+Digital twins, virtual replicas of physical systems, have revolutionized various industries. 
+However, their potential in radio frequency (RF) applications has been limited by the unidirectional 
+nature of conventional simulators. Here, we present InverTwin, the first inverse simulator for RF digital twins, 
+enabling bidirectional interaction between virtual and physical realms. InverTwin overcomes the 
+challenges of discontinuity and local non-convexity in RF simulations optimization through 
+path-space differentiation with edge reparametrization, making the simulator end-to-end differentiable 
+for arbitrary scene parameters. We introduce a surrogate model for radar waveform to address phase 
+periodicity issues.  Our proposed
+approach harnesses the power of physical-based simulation with differentiable computing.
+Our extensive experiments demonstrate that InverTwin significantly enhances existing machine 
+learning systems, improves robotics applications, and facilitates physically constrained parameter searches. 
+These advancements pave the way for more accurate and responsive RF digital twins, with potential applications 
+in communications, autonomous systems, and smart environments. The supplementary materials and code are 
+released anonymously at  
+`invertwin.github.io <https://invertwin.github.io/>`_.
 
 
 .. toctree::
