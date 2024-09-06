@@ -26,6 +26,4 @@ in communications, autonomous systems, and smart environments. The demo code wil
    :caption: Contents:
 
    Home <self>
-   notebook/123
-   usage
-   api
+   notebook/demo
