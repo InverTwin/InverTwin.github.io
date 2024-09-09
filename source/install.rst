@@ -1,0 +1,27 @@
+Installation
+============
+
+The supplementary code and package is test on Linux 22.04 with GPU NVIDIA RTX A6000.
+
+Create and activate conda environment:
+
+.. code-block:: conda_env
+
+    conda create --name invertwin_demo -y python=3.8
+    conda activate invertwin_demo
+
+Install requirements:
+
+.. code-block:: req_ins
+
+    conda install -c conda-forge gcc=12.1.0
+    python -m pip install --upgrade pip
+    pip install torch==2.1.2+cu118 torchvision==0.16.2+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+
+    conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
+
+Download `invertwin-0.0.1-cp38-cp38-linux_x86_64.whl <about:blank>`_ (will be provided before 9.17)
+
+.. code-block:: ins_invertwin
+
+    pip install invertwin-0.0.1-cp38-cp38-linux_x86_64.whl
