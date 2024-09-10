@@ -20,7 +20,7 @@ Install requirements:
 
     conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 
-Download `invertwin-0.0.1-cp38-cp38-linux_x86_64.whl <about:blank>`_ (will be provided before 9.17)
+Download `invertwin-0.0.1-cp38-cp38-linux_x86_64.whl <about:blank>`_ (will be provided before Sept 17th 2024)
 
 .. code-block:: ins_invertwin
 

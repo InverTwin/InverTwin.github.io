@@ -6,7 +6,7 @@
 Welcome to InverTwin
 ========================
 
-InverTwin is a fully differentiable radio simulator design for Digital Twin.
+InverTwin is a fully differentiable radio simulator designed for Digital Twin.
 The paper is currently in submission, hence the current webpage is in anonymous.
 
 Abstract
