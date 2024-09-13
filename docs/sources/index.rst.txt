@@ -33,4 +33,4 @@ in communications, autonomous systems, and smart environments. The demo code wil
 
    Home <self>
    install
-   notebook/supplementary
+   supplementary
