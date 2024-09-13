@@ -7,6 +7,6 @@ The package, which includes data, notebooks, and ``.whl`` files is available for
    :maxdepth: 2
    :caption: Contents:
 
-   notebook/loss_landscape
+   notebook/loss-landscape
    notebook/spectrum
    notebook/grad
