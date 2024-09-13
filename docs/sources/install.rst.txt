@@ -1,7 +1,7 @@
 Installation
 ============
 
-The supplementary code and package is test on Linux 22.04 with GPU NVIDIA RTX A6000.
+The supplementary code and package is tested on Linux 22.04 with GPU NVIDIA RTX A6000.
 
 Create and activate conda environment:
 
