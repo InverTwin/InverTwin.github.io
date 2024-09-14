@@ -61,7 +61,7 @@
    "id": "06faf3eb",
    "metadata": {},
    "source": [
-    "#### Scene Setup"
+    "## Scene Setup"
    ]
   },
   {
@@ -86,7 +86,7 @@
    "id": "fc2cc307",
    "metadata": {},
    "source": [
-    "### Parameterization\n",
+    "## Parameterization\n",
     "We set parameter $p$ to control the mesh's translation of Z axis."
    ]
   },
@@ -132,7 +132,7 @@
    "id": "c051744e",
    "metadata": {},
    "source": [
-    "### Differetation\n",
+    "## Differetation\n",
     "Forward mode automatic differetation to obtain the gradient of the spectrum."
    ]
   },
@@ -164,7 +164,7 @@
    "id": "9d242fe4",
    "metadata": {},
    "source": [
-    "### Visualization\n",
+    "## Visualization\n",
     "A side view of the 3D spectrum."
    ]
   },
@@ -237,7 +237,7 @@
    "id": "c8b547da",
    "metadata": {},
    "source": [
-    "### Results\n",
+    "## Results\n",
     "Projection of the 3D Spectrum Gradient onto a 2D Surface"
    ]
   },

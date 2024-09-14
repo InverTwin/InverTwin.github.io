@@ -23,7 +23,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "#### Load Data \n",
+    "## Load Data \n",
     "The simulated raw radar IF signals.\n",
     "20 Tx * 20 Rx, one chirp, 256 samples per chirps.  (Vayyar TrigB radar)"
    ]
@@ -48,6 +48,13 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Process Spatial Spectrum"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": 3,
    "metadata": {},
@@ -55,6 +62,13 @@
    "source": [
     "SpatialSpectrumGen= SpatialSpectrum()\n",
     "spect3D = SpatialSpectrumGen.radar_image(sig)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Visualization"
    ]
   },
   {
@@ -93,7 +107,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "#### Backpropagation"
+    "## Backpropagation"
    ]
   },
   {
@@ -113,6 +127,13 @@
     "Normally, the gradient can be backpropagated through the spatial spectrum algorithm.\n",
     "\n",
     "But the local non-convexity problem still exist, so we developed a spatial spectrum surrogate"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Check Gradients"
    ]
   },
   {

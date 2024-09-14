@@ -24,7 +24,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "### Virtual Radar\n",
+    "## Virtual Radar\n",
     "We use a basic radar model from invertwin "
    ]
   },
@@ -70,7 +70,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "Target range profile"
+    "Target range profile (Ground Truth)"
    ]
   },
   {
@@ -123,7 +123,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "#### Loss Landscape"
+    "## Loss Landscape"
    ]
   },
   {
@@ -151,7 +151,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "#### Visualization"
+    "## Visualization"
    ]
   },
   {
@@ -204,7 +204,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "#### Results"
+    "## Results"
    ]
   },
   {
