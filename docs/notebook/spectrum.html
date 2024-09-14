@@ -55,10 +55,8 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../supplementary.html">InverTwin Supplementary</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="loss-landscape.html">Local Non-convexity</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Spatial Spectrum</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#Load-the-simulated-raw-radar-IF-signals.">Load the simulated raw radar IF signals.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#20-Tx-*-20-Rx,-one-chirp,-256-samples-per-chirps.-(Vayyar-TrigB-radar)">20 Tx * 20 Rx, one chirp, 256 samples per chirps. (Vayyar TrigB radar)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#Back-propagating-the-loss-scalar">Back propagating the loss scalar</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#Normally,-the-gradient-can-be-backpropagated-through-the-spatial-spectrum-algorithm.">Normally, the gradient can be backpropagated through the spatial spectrum algorithm.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Load-Data">Load Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Backpropagation">Backpropagation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="grad.html">Gradients</a></li>
@@ -104,8 +102,9 @@
 </pre></div>
 </div>
 </div>
-<section id="Load-the-simulated-raw-radar-IF-signals.">
-<h2>Load the simulated raw radar IF signals.<a class="headerlink" href="#Load-the-simulated-raw-radar-IF-signals." title="Link to this heading"></a></h2>
+<section id="Load-Data">
+<h2>Load Data<a class="headerlink" href="#Load-Data" title="Link to this heading"></a></h2>
+<p>The simulated raw radar IF signals. 20 Tx * 20 Rx, one chirp, 256 samples per chirps. (Vayyar TrigB radar)</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -124,9 +123,6 @@
 torch.Size([20, 20, 1, 256])
 </pre></div></div>
 </div>
-</section>
-<section id="20-Tx-*-20-Rx,-one-chirp,-256-samples-per-chirps.-(Vayyar-TrigB-radar)">
-<h2>20 Tx * 20 Rx, one chirp, 256 samples per chirps. (Vayyar TrigB radar)<a class="headerlink" href="#20-Tx-*-20-Rx,-one-chirp,-256-samples-per-chirps.-(Vayyar-TrigB-radar)" title="Link to this heading"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -159,12 +155,12 @@ torch.Size([20, 20, 1, 256])
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/notebook_spectrum_6_1.png" src="../_images/notebook_spectrum_6_1.png" />
+<img alt="../images/notebookspectrum51.png" src="../images/notebookspectrum51.png" />
 </div>
 </div>
 </section>
-<section id="Back-propagating-the-loss-scalar">
-<h2>Back propagating the loss scalar<a class="headerlink" href="#Back-propagating-the-loss-scalar" title="Link to this heading"></a></h2>
+<section id="Backpropagation">
+<h2>Backpropagation<a class="headerlink" href="#Backpropagation" title="Link to this heading"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
@@ -174,9 +170,7 @@ torch.Size([20, 20, 1, 256])
 <br/></pre></div>
 </div>
 </div>
-</section>
-<section id="Normally,-the-gradient-can-be-backpropagated-through-the-spatial-spectrum-algorithm.">
-<h2>Normally, the gradient can be backpropagated through the spatial spectrum algorithm.<a class="headerlink" href="#Normally,-the-gradient-can-be-backpropagated-through-the-spatial-spectrum-algorithm." title="Link to this heading"></a></h2>
+<p>Normally, the gradient can be backpropagated through the spatial spectrum algorithm.</p>
 <p>But the local non-convexity problem still exist, so we developed a spatial spectrum surrogate</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:

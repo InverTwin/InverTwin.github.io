@@ -54,8 +54,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../supplementary.html">InverTwin Supplementary</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Local Non-convexity</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#We-use-a-basic-radar-model-from-invertwin">We use a basic radar model from invertwin</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#We-define-two-function,-processing-using-FFT-and-surrogate-model,-respectively.">We define two function, processing using FFT and surrogate model, respectively.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Virtual-Radar">Virtual Radar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Loss-Landscape">Loss Landscape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Visualization">Visualization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Results">Results</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="spectrum.html">Spatial Spectrum</a></li>
@@ -103,8 +107,9 @@
 </pre></div>
 </div>
 </div>
-<section id="We-use-a-basic-radar-model-from-invertwin">
-<h2>We use a basic radar model from invertwin<a class="headerlink" href="#We-use-a-basic-radar-model-from-invertwin" title="Link to this heading"></a></h2>
+<section id="Virtual-Radar">
+<h2>Virtual Radar<a class="headerlink" href="#Virtual-Radar" title="Link to this heading"></a></h2>
+<p>We use a basic radar model from invertwin</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -114,9 +119,7 @@
 </pre></div>
 </div>
 </div>
-</section>
-<section id="We-define-two-function,-processing-using-FFT-and-surrogate-model,-respectively.">
-<h2>We define two function, processing using FFT and surrogate model, respectively.<a class="headerlink" href="#We-define-two-function,-processing-using-FFT-and-surrogate-model,-respectively." title="Link to this heading"></a></h2>
+<p>We define two function, processing using FFT and surrogate model, respectively.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -167,10 +170,12 @@
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/notebook_loss-landscape_8_1.png" src="../_images/notebook_loss-landscape_8_1.png" />
+<img alt="../images/notebookloss-landscape81.png" src="../images/notebookloss-landscape81.png" />
 </div>
 </div>
 <p>We calculate all possible range x value to draw the loss landscape.</p>
+<section id="Loss-Landscape">
+<h3>Loss Landscape<a class="headerlink" href="#Loss-Landscape" title="Link to this heading"></a></h3>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
@@ -191,6 +196,9 @@
 </pre></div>
 </div>
 </div>
+</section>
+<section id="Visualization">
+<h3>Visualization<a class="headerlink" href="#Visualization" title="Link to this heading"></a></h3>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
@@ -235,6 +243,9 @@
 </pre></div>
 </div>
 </div>
+</section>
+<section id="Results">
+<h3>Results<a class="headerlink" href="#Results" title="Link to this heading"></a></h3>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
@@ -247,7 +258,7 @@
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/notebook_loss-landscape_13_0.png" src="../_images/notebook_loss-landscape_13_0.png" />
+<img alt="../images/notebookloss-landscape160.png" src="../images/notebookloss-landscape160.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -262,10 +273,11 @@
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/notebook_loss-landscape_14_0.png" src="../_images/notebook_loss-landscape_14_0.png" />
+<img alt="../images/notebookloss-landscape170.png" src="../images/notebookloss-landscape170.png" />
 </div>
 </div>
 <p>Surrogate model provides smooth gradient and loss landscape for optimization.</p>
+</section>
 </section>
 </section>
 

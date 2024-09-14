@@ -55,12 +55,13 @@
 <li class="toctree-l2"><a class="reference internal" href="loss-landscape.html">Local Non-convexity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="spectrum.html">Spatial Spectrum</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Gradients</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#Set-up-a-simple-scene-in-the-invertwin-digtal-twin.">Set up a simple scene in the invertwin digtal twin.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#We-set-parameter-p-to-control-the-mesh's-translation-of-Z-axis.">We set parameter <span class="math notranslate nohighlight">\(p\)</span> to control the mesh’s translation of Z axis.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#Forward-mode-automatic-differetation-to-obtain-the-gradient-of-the-spectrum.">Forward mode automatic differetation to obtain the gradient of the spectrum.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#A-side-view-of-the-3D-spectrum.">A side view of the 3D spectrum.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#Normalization-for-visualization,-we-want-to-ensure-that-a-gradient-of-0-remains-at-0-when-plotting.">Normalization for visualization, we want to ensure that a gradient of 0 remains at 0 when plotting.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#Projection-of-the-3D-Spectrum-Gradient-onto-a-2D-Surface">Projection of the 3D Spectrum Gradient onto a 2D Surface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Scene-Setup">Scene Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Parameterization">Parameterization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Differetation">Differetation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Visualization">Visualization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Results">Results</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -135,8 +136,8 @@
 <br/></pre></div>
 </div>
 </div>
-<section id="Set-up-a-simple-scene-in-the-invertwin-digtal-twin.">
-<h2>Set up a simple scene in the invertwin digtal twin.<a class="headerlink" href="#Set-up-a-simple-scene-in-the-invertwin-digtal-twin." title="Link to this heading"></a></h2>
+<section id="Scene-Setup">
+<h2>Scene Setup<a class="headerlink" href="#Scene-Setup" title="Link to this heading"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -152,9 +153,9 @@
 </pre></div>
 </div>
 </div>
-</section>
-<section id="We-set-parameter-p-to-control-the-mesh's-translation-of-Z-axis.">
-<h2>We set parameter <span class="math notranslate nohighlight">\(p\)</span> to control the mesh’s translation of Z axis.<a class="headerlink" href="#We-set-parameter-p-to-control-the-mesh's-translation-of-Z-axis." title="Link to this heading"></a></h2>
+<section id="Parameterization">
+<h3>Parameterization<a class="headerlink" href="#Parameterization" title="Link to this heading"></a></h3>
+<p>We set parameter <span class="math notranslate nohighlight">\(p\)</span> to control the mesh’s translation of Z axis.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
@@ -182,8 +183,9 @@
 </div>
 </div>
 </section>
-<section id="Forward-mode-automatic-differetation-to-obtain-the-gradient-of-the-spectrum.">
-<h2>Forward mode automatic differetation to obtain the gradient of the spectrum.<a class="headerlink" href="#Forward-mode-automatic-differetation-to-obtain-the-gradient-of-the-spectrum." title="Link to this heading"></a></h2>
+<section id="Differetation">
+<h3>Differetation<a class="headerlink" href="#Differetation" title="Link to this heading"></a></h3>
+<p>Forward mode automatic differetation to obtain the gradient of the spectrum.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
@@ -206,8 +208,9 @@
 </div>
 </div>
 </section>
-<section id="A-side-view-of-the-3D-spectrum.">
-<h2>A side view of the 3D spectrum.<a class="headerlink" href="#A-side-view-of-the-3D-spectrum." title="Link to this heading"></a></h2>
+<section id="Visualization">
+<h3>Visualization<a class="headerlink" href="#Visualization" title="Link to this heading"></a></h3>
+<p>A side view of the 3D spectrum.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
@@ -229,12 +232,10 @@
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/notebook_grad_13_1.png" src="../_images/notebook_grad_13_1.png" />
+<img alt="../images/notebookgrad131.png" src="../images/notebookgrad131.png" />
 </div>
 </div>
-</section>
-<section id="Normalization-for-visualization,-we-want-to-ensure-that-a-gradient-of-0-remains-at-0-when-plotting.">
-<h2>Normalization for visualization, we want to ensure that a gradient of 0 remains at 0 when plotting.<a class="headerlink" href="#Normalization-for-visualization,-we-want-to-ensure-that-a-gradient-of-0-remains-at-0-when-plotting." title="Link to this heading"></a></h2>
+<p>Normalization for visualization, we want to ensure that a gradient of 0 remains at 0 when plotting.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
@@ -259,8 +260,9 @@
 </div>
 </div>
 </section>
-<section id="Projection-of-the-3D-Spectrum-Gradient-onto-a-2D-Surface">
-<h2>Projection of the 3D Spectrum Gradient onto a 2D Surface<a class="headerlink" href="#Projection-of-the-3D-Spectrum-Gradient-onto-a-2D-Surface" title="Link to this heading"></a></h2>
+<section id="Results">
+<h3>Results<a class="headerlink" href="#Results" title="Link to this heading"></a></h3>
+<p>Projection of the 3D Spectrum Gradient onto a 2D Surface</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
@@ -283,9 +285,10 @@
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/notebook_grad_17_1.png" src="../_images/notebook_grad_17_1.png" />
+<img alt="../images/notebookgrad171.png" src="../images/notebookgrad171.png" />
 </div>
 </div>
+</section>
 </section>
 </section>
 
