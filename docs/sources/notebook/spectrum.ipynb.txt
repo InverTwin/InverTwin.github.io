@@ -25,7 +25,7 @@
    "source": [
     "## Load Data \n",
     "The simulated raw radar IF signals.\n",
-    "20 Tx * 20 Rx, one chirp, 256 samples per chirps.  (Vayyar TrigB radar)"
+    "20 Tx * 20 Rx, one chirp, 256 samples per chirp.  (Vayyar TrigB radar)"
    ]
   },
   {
